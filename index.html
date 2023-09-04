@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left sidebar">
+        <div class="logo-container">
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo">
+            <h1 class="logo-name">Odin</h1>
+        </div>
+        <footer>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </footer>
+        
+    </div>
+    <div class="right">
+        <div class="header-container">
+            <div class="header">This is not a real service! But, you can sign up anyways. Sign up now to get started.</div>
+            <div class="subheader">You know you want to</div>
+        </div>
+        <form action="", method="post">
+            <fieldset>
+                <legend>Sign up</legend>
+                <li><label for="first-name">FIRST NAME</label><input class="input-box" type="text" id="first-name" name="first-name" required></li>
+                <li><label for="last-name">LAST NAME</label><input class="input-box" type="text" id="last-name" name="last-name" required></li>
+                <li><label for="mail">EMAIL</label><input class="input-box" type="email" id="mail" name="email"required></li>
+                <li><label for="phone-num">PHONE NUMBER</label><input class="input-box" type="tel" id="phone-num" name="phone-number" ></li>
+                <li><label for="pass">PASSWORD</label><input class="input-box" type="password" id="pass" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></li>
+                <li><label for="confirm-pass">CONFIRM PASSWORD</label><input class="input-box" type="password" id="confirm-pass" name="confirmed-password"required ></li>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <div class="subtext">Already have an account? <a id="log-in" href="">Log in</a></div>
+    </div>
+</body>
+</html>
